@@ -1,0 +1,37 @@
+h1,h2 {
+    color: rgb(39, 39, 39);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+   background-image: url(../imagenes/pexels-miguel-á-padriñán-3785931.jpg);
+   background-size: cover;   
+   /* opacity: 0.5;  */
+}
+form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+fieldset {
+    background-color: rgb(189, 190, 191);
+    display: inline-block;
+    border-radius: 30px;
+    color: transparent;
+    backdrop-filter: blur(10px);
+    margin-left: 80vh;
+    margin-top: 30vh;
+    width: 300px;
+}
+.boton{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.scrit{
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 30px;
+}
