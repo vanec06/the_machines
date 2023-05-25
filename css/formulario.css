@@ -1,0 +1,21 @@
+body{
+    background-image: url(../imagenes/36779.jpg);
+    color: white;
+}
+label{
+    display: flex ;
+    align-items: left;
+    text-align: left;
+    font-size: 4;
+}
+input[type="text"]{
+    padding: 6px;
+    font-size: 0.8em;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid rgb(64,64,64);
+}
+input[type="text"]:focus{
+    outline: none;
+}
+
