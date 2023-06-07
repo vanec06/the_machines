@@ -8,22 +8,22 @@
   <title>Formulario Registro</title>
 </head>
 <body>
+
   <section class="contenedor">
 
        <h2 class="title" >Formulario Registro</h2>
-
-       <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+<form  onsubmit="validarregistro">
+       <input  class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-       <input class="controls" type="ficha" name="id_ficha" id="ficha" placeholder="Id ficha">
+       <input class="controls" type="number" name="id_ficha" id="ficha" placeholder="Id ficha">
        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-       <input class="controls" type="password" name="Contraseña"  id="correo" placeholder="Ingrese su Contraseña">
-   
+       <input class="controls" type="password" name="Contraseña" id="password" placeholder="Ingrese su Contraseña">
+  </form>
        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-   
-       <input class="boton" type="submit" value="Registrar">
-       
+           <input id="BtnEnviar" class="BtnEnviar" type="submit" value="Registrar">
        <p><a href="#">¿Ya tengo Cuenta?</a></p>
-  </section>
 
+  </section>
+ <script src="js/registro_usuario_v.js"> </script>
 </body>
 </html>
