@@ -9,19 +9,20 @@ h1{
 body{
     background-image: url(../imagenes/fondo2.jpg);
     background-size: cover;
-    width: 90%;
-    height: 90vh;
+    text-align: center;
     text-shadow: 10px 5px 10px rgb(45, 102, 209); 
 }
 .contenedor{
-    height: 200px;
+    height: 180px;
     width: 300px;
     display: inline-block;
-    margin-left: 128px;
+    margin-left: 50px;
     margin-top: 80px;
     border-radius: 30px;
     color: transparent;
     backdrop-filter:blur(10px);
+    
+
 }
 a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,7 +42,7 @@ li{
     height: 200px;
     width: 300px;
     display: inline-block;
-    margin-left: 790px;
+    margin-left:190px;
     margin-top: 90px;
     border-radius: 30px;
     color: transparent;
