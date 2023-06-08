@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="modalAlert" class="modal-atert">
-        <div class="box-alert"><i  class="fa-solid fa-check good"></i>
+        <div  id="boxAlert"class="box-alert"><i  class="fa-solid fa-check good"></i>
             <p>Registro Exitoso!</p>
             <input id="btnAceptar" class="btn-aceptar" value="     Aceptar">
         </div>
@@ -20,16 +20,25 @@
             <h1>Registro</h1>
             <h2>Machines</h2>
             <div class="centro" ><i class="fa-solid fa-circle-user user"></i></div><br>
+
             <input id="nombreUsuario" class="scrit" type="text" placeholder="   Ingrese su nombre completo"><br><br>
+            <label id="txtAlert" class="txt-alert-hidden">por favor, ingrese su nombre</label><br>
+
             <input id="apellido"      class="scrit" type="text" placeholder="   Ingrese su apellido"><br><br>
+            <label id="txtApe" class="txt-alert-hidden">por favor, ingrese su apellido</label><br>
+
             <input id="correo"        class="scrit" type="email" placeholder="   Correo"><br><br>
+            <label id="txtcorr" class="txt-alert-hidden">por favor, ingrese su correo</label><br>
+
             <input id="contraseña"    class="scrit" type="password" placeholder="   contraseña"><br><br>
+            <label id="txtcon" class="txt-alert-hidden">por favor, ingrese su contraseña</label><br>
+
             <input id="btnEnviar"     class="boton" type="button" value="lOGIN"><br><br>
             <a href="?">¿olvidaste tu contraseña?</a><br><br>
             <a href="?">¿No tienes cuenta? registrate</a><br>
             
         </fieldset>
     </form>
-    <script src="js/beggin.js"></script>
+    <script src="js/begginMo.js"></script>
 </body>
 </html>
