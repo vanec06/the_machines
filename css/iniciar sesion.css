@@ -1,103 +1,81 @@
 body {
-    font-family: 'Overpass', sans-serif;
-    font-weight: normal;
-    font-size: 100%;
-    color: #484e51;
-    margin: 0;
-    background-color: #ffffff;
-    background-image: url(../imagenes/inventario.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #494545;
+  font-family: Arial, sans-serif;
 }
 
-#contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-#central {
-    max-width: 320px;
-    width: 100%;
+h1 {
+  margin-top: 0;
 }
 
-.titulo {
-    font-size: 250%;
-    color:#000000;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: rgb(228, 241, 241);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-
-#login input {
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color: #000000;
-    display: block;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-    padding: 5px 5px 5px 10px;
-    box-sizing: border-box;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
+label {
+  margin-bottom: 5px;
 }
 
-#login input::placeholder {
-    font-family: 'Overpass', sans-serif;
-    color: #8a8282;
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
-#login button {
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color:#ffffff;
-    width: 100%;
-    height: 40px;
-    border: none;
-    
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    
-    background-color:rgb(215, 223, 223);
-    
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.pie-form {
-    font-size: 90%;
-    text-align: center;    
-    margin-top: 15px;
-    color: whitesmoke;
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
-.pie-form a {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-    margin-bottom: 3px;
+button:hover {
+  background-color: #45a049;
 }
 
-.pie-form a:hover {
-    color: #ff0808;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
-.inferior {
-    margin-top: 10px;
-    font-size: 90%;
-    text-align: center;
-}
-a{
-    text-decoration: none;
+.messageDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 1;
+  display: none;
 }
