@@ -23,6 +23,7 @@ nav{
     list-style: none;
 }
 .inventario{
+    font-size: 2em;
     display: flex;
     margin-left: 100px;
     margin-top: 20px;
@@ -72,7 +73,7 @@ i{
     height: 100vh;
 }
 .cerrar{
-    margin-top: 20em;
+    margin-top: 15em;
 }
 .hamburguer{
     margin-left: 150px;
