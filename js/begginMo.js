@@ -16,23 +16,37 @@ btnEnviar.addEventListener("click", function(){
     if (nombreUsuario.value.length === 0){
         txtAlert.classList.add("txt-alert-visible");
         txtAlert.classList.remove("txt-alert-hidden");
+    }else {
+        txtAlert.classList.remove("txt-alert-visible");
+        txtAlert.classList.add("txt-alert-hidden");
     }
-    else if (apellido.value.length === 0){
+
+    if (apellido.value.length === 0){
         txtApe.classList.add("txt-alert-visible");
         txtApe.classList.remove("txt-alert-hidden");
-    }else if (correo.value.length === 0){
+    }else{ 
+        txtApe.classList.remove("txt-alert-visible");
+        txtApe.classList.add("txt-alert-hidden"); 
+    }
+
+    if (correo.value.length === 0){
         txtcorr.classList.add("txt-alert-visible");
         txtcorr.classList.remove("txt-alert-hidden");
-    }else if (contraseña.value.length === 0){
+    }else{
+        txtcorr.classList.remove("txt-alert-visible");
+        txtcorr.classList.add("txt-alert-hidden");
+    }
+
+    if (contraseña.value.length === 0){
         txtcon.classList.add("txt-alert-visible");
         txtcon.classList.remove("txt-alert-hidden");
     }
     else{
-        txtAlert.classList.remove("txt-alert-visible");
-        txtAlert.classList.add("txt-alert-hidden");
+        txtcon.classList.remove("txt-alert-visible");
+        txtcon.classList.add("txt-alert-hidden");
     }
 });
-btnAceptar.addEventListener("click,", function() {
+btnAceptar.addEventListener("click", function() {
     modalAlert.classList.remove("modal-alert-visible");
     modalAlert.classList.add("modal-alert-hidden");
 
