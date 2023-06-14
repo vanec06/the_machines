@@ -43,11 +43,6 @@ a{
     font-size:13px;
     color: white;
 }
-
-ul:hover {
-border-radius: 10px;
-background-color:rgb(40, 81, 127);
-}
 .raya{
     border-bottom: 1px solid rgb(230, 235, 239) ;
     width: 150px;
@@ -75,9 +70,37 @@ i{
 .cerrar{
     margin-top: 15em;
 }
-.hamburguer{
+.menu-icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
     margin-left: 150px;
+  }
+  
+.menu-icon:hover {
+    color: #ddd;
+  }
+  
+#menu-toggle:checked ~ .menu {
+    display: block;
 }
 li:hover{
     cursor: pointer;
 }
+.menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    padding: 10px;
+}
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: #ddd;
+}
+  
