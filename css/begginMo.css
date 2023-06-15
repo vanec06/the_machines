@@ -13,7 +13,7 @@ body{
 .user{
     font-size: 1.5em; 
     margin-top: 10px;
-    color: rgb(15, 109, 209);
+    color: rgb(15, 109, 208);
 }
 form {
     display: flex;
