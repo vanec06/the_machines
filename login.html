@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+    <div class="modal-alert alert-hidden" id="modalAlert">
+        <i class="fa-solid fa-circle-xmark" id="closed"></i>
+        <div class="box-alert"> 
+            <h2 class="mensajeexi">¡Registro con exito!</h2>
+            <div class="check"><img src="imagenes/bien.jpg" width="150"></div>
+            <input type="button" class="btn-aceptarext" id="btnAceptar" value="Aceptar">
+        </div>
+    </div>
+    <div class="modal-alert-2 alert-hidden2" id="modalAlert2">
+        <i class="fa-solid fa-circle-xmark" id="closed2"></i>
+        <div class="box-alert"> 
+            <h2 class="mensaje">Debe ingresar los campos vacios</h2>
+            <div class="notcheck"><img src="imagenes/error.jpg" width="150"></div>
+            <input type="button" class="btn-aceptar" id="btnAceptar2" value="Aceptar">
+        </div>
+    </div>
+  
     <div class="cuadro">
-        <form >
             <fieldset>
                 <div class="contenido">
                     <h1>INICIAR SESION</h1>
-                    <input type="text" placeholder=" Usuario">
-                    <input type="text" placeholder=" Nombre">
-                    <input type="text" placeholder=" Correo">
-                    <input type="password" placeholder=" Contraseña">
-                    <p><a href="#">¿Has olvidado tu contraseña?</a></p>
-                        <a href="index.html"><button>INICIAR SESION</button></a>
-                    <p><a href="#">Politica de privacidad </a></p>
-                    <p><a href="#">Registrarse </a></p>
+                    <input type="text" placeholder=" Usuario" id="User">
+                    <label id="txtAlert" class="txt-alert-hidden">el campo es obligatorio</label>
+                    <input type="text" placeholder=" Nombre" id="Name">
+                    <label id="txtAlert1" class="txt-alert-hidden">el campo es obligatorio</label>
+                    <input type="text" placeholder=" Correo" id="Email">
+                    <label id="txtAlert2" class="txt-alert-hidden">el campo es obligatorio</label>
+                    <input type="password" placeholder=" Contraseña" id="Psswor">
+                    <label id="txtAlert3" class="txt-alert-hidden">el campo es obligatorio</label>
+                   <!--  <a href="index.html"> --><button id="btnEnviar">INICIAR SESION</button></a>
                 </div>
-            </fieldset>
-
-        </form>
-
+                <script src="js/login.js"></script>
     </div>
     
 </body>
